@@ -1,0 +1,28 @@
+# Terraform working directories
+**/.terraform/*
+
+# Terraform state and backup files
+*.tfstate
+*.tfstate.*
+
+# Terraform plans and crash logs
+*.tfplan
+crash.log
+crash.*.log
+
+# Environment-specific input and backend configuration
+*.tfvars
+!*.tfvars.example
+backend.hcl
+
+# The bootstrap stack starts with local state. After creating the S3/KMS
+# resources, copy backend.tf.example to this ignored local file and migrate.
+/terraform/bootstrap/backend.tf
+
+# Local Terraform CLI configuration
+.terraformrc
+terraform.rc
+
+# OS and editor files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,5 @@
+# Terraform自体の動作設定を記述するブロック
+terraform {
+  # stateファイルの格納先をS3にしますという宣言
+  backend "s3" {}
+}

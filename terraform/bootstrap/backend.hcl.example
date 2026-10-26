@@ -1,0 +1,7 @@
+bucket       = "<STATE_BUCKET_NAME>"
+key          = "bootstrap/terraform.tfstate"
+region       = "ap-northeast-1"
+encrypt      = true
+# エイリアスでは無くて、実際に作成されたリソースを記述する。
+kms_key_id   = "<STATE_KMS_KEY_ARN>"
+use_lockfile = true
